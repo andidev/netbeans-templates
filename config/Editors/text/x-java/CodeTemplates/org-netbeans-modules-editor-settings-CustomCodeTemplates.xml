@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE codetemplates PUBLIC "-//NetBeans//DTD Editor Code Templates settings 1.0//EN" "http://www.netbeans.org/dtds/EditorCodeTemplates-1_0.dtd">
+<codetemplates>
+    <codetemplate abbreviation="deb" xml:space="preserve">
+        <code><![CDATA[log.debug("${COMMENT default="comment"}");]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="debf" xml:space="preserve">
+        <code><![CDATA[log.debug("${FIELD default="field"} = {}", ${FIELD});]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="debr" xml:space="preserve">
+        <code><![CDATA[log.debug("${FIELD default="field"} = {}", ReflectionToStringBuilder.toString(${FIELD}, ToStringStyle.MULTI_LINE_STYLE));]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="com" xml:space="preserve">
+        <code><![CDATA[/* ${cursor} */]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="come" xml:space="preserve">
+        <code><![CDATA[// TODO: Create exception]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="log" xml:space="preserve">
+        <code><![CDATA[    private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(${classVar editable="false" currClassName default="getClass()"}.class);]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="logr" xml:space="preserve">
+        <code><![CDATA[private static final $${classVar editable="false" currClassName default="getClass()"}{loggerType type="java.util.logging.Logger" default="Logger" editable="false"} logger = ${loggerType}.getLogger(.class.getName());]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="sys" xml:space="preserve">
+        <code><![CDATA[System.out.println("${COMMENT default="comment"}");]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="sysf" xml:space="preserve">
+        <code><![CDATA[System.out.println("${FIELD default="field"} = " + ${FIELD});]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="sysr" xml:space="preserve">
+        <code><![CDATA[System.out.println("${FIELD default="field"} = " + ReflectionToStringBuilder.toString(${FIELD}, ToStringStyle.MULTI_LINE_STYLE));]]></code>
+    </codetemplate>
+</codetemplates>
